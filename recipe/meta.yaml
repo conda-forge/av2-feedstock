@@ -38,6 +38,8 @@ requirements:
     - scipy
 
 test:
+  source_files:
+    - tests
   imports:
     - av2
   requires:
