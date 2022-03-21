@@ -25,7 +25,7 @@ requirements:
   host:
     - xorg-libxfixes  # [linux]
     - pip
-    - python >=3.8
+    - python
     - setuptools >=42
     - wheel
 
@@ -39,7 +39,7 @@ requirements:
     - numpy >=1.21.5
     - opencv
     - pandas
-    - python >=3.8
+    - python
     - pip
     - pyarrow
     - rich
