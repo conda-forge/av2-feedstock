@@ -42,8 +42,10 @@ test:
     - av2
   requires:
     - pip
+    - pytest
   commands:
     - pip check
+    - pytest
 
 about:
   home: https://github.com/argoai/argoverse2-api
