@@ -43,6 +43,7 @@ test:
   imports:
     - av2
   requires:
+    - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - pip
     - pytest
   commands:
