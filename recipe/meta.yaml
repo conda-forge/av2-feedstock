@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/argoai/argoverse2-api/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 853aca3c9dd561f189b6c808f3d73ea816fc5e2cce7d98fc3c832dd181c4ef45
+  url: https://github.com/argoai/{{ name }}-api/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 3c49ebb5ac1b6daa70cf8fce59c9fafc25325afb24b2793e6558bf00652cb1cd
 
 build:
   noarch: python
@@ -48,7 +48,7 @@ test:
     - pytest
 
 about:
-  home: https://github.com/argoai/argoverse2-api
+  home: https://github.com/argoai/{{ name }}-api
   summary: 'The official API of the Argoverse 2 dataset.'
   description: |
     The official API of the Argoverse 2 dataset.
@@ -57,8 +57,8 @@ about:
   license_file: 
     - LICENSE
     - NOTICE
-  doc_url: https://github.com/argoai/argoverse2-api
-  dev_url: https://github.com/argoai/argoverse2-api
+  doc_url: https://github.com/argoai/{{ name }}-api
+  dev_url: https://github.com/argoai/{{ name }}-api
 
 extra:
   recipe-maintainers:
