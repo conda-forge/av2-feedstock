@@ -1,18 +1,18 @@
 {% set name = "av2" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/argoai/{{ name }}-api/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 3c49ebb5ac1b6daa70cf8fce59c9fafc25325afb24b2793e6558bf00652cb1cd
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 1571888e79917ee404b8898dfc4f1347abd9d07f70f6fc8245e9b00f54a48f1c
 
 build:
   skip: true  # [py<3.8]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
