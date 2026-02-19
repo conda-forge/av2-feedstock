@@ -1,5 +1,5 @@
 {% set name = "av2" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/argoai/argoverse2-api/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: e420c52f72aa807588dd189aeb9404963e046e230d90366e5e711a38bae1cebd
+  sha256: 32f0549b684d582d3be969e21fa4ebe12fe65a73cb4b2e5fb54afaa22ff9984d
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
